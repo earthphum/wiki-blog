@@ -58,5 +58,4 @@ Password: password
 ```bash
 chmod +x setup.sh kill.sh
 ./setup.sh
-./kill.sh
 ```
