@@ -776,7 +776,7 @@ function App() {
                     >
                         {lang === 'en' ? 'TH' : 'EN'}
                     </button>
-                    {/* {isLoggedIn ? (
+                    {isLoggedIn ? (
                         <>
                             <button
                                 onClick={() => {
@@ -788,21 +788,22 @@ function App() {
                             >
                                 {t('newFileFolder')}
                             </button>
-                            <button
+                            {/* <button
                                 onClick={handleLogout}
                                 className="w-full bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-700 transition-colors shadow"
                             >
                                 {t('logout')}
-                            </button>
+                            </button> */}
                         </>
                     ) : (
-                        <button
-                            onClick={() => setShowLoginModal(true)}
-                            className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors shadow"
-                        >
-                            {t('login')}
-                        </button>
-                    )} */}
+                        // <button
+                        //     onClick={() => setShowLoginModal(true)}
+                        //     className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors shadow"
+                        // >
+                        //     {t('login')}
+                        // </button>
+                        null
+                    )}
                 </div>
             </aside>
 
