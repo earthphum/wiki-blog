@@ -54,6 +54,7 @@ Password: password
 ```
 
 ### Quick Setup
+- optionally, you can just run this script(setup.sh) to start the project
 
 ```bash
 chmod +x setup.sh kill.sh
