@@ -1,0 +1,78 @@
+@import "tailwindcss";
+/* Custom styles for markdown content rendering */
+/* Custom styles for markdown content rendering */
+.markdown-body h1 {
+  @apply text-3xl font-bold mb-4;
+}
+.markdown-body h2 {
+  @apply text-2xl font-semibold mb-3;
+}
+.markdown-body h3 {
+  @apply text-xl font-medium mb-2;
+}
+.markdown-body p {
+  @apply mb-4 leading-relaxed;
+}
+.markdown-body ul {
+  @apply list-disc list-inside mb-4 pl-4;
+}
+.markdown-body ol {
+  @apply list-decimal list-inside mb-4 pl-4;
+}
+.markdown-body li {
+  @apply mb-1;
+}
+.markdown-body a {
+  @apply text-blue-600 hover:underline;
+}
+.markdown-body strong {
+  @apply font-bold;
+}
+.markdown-body em {
+  @apply italic;
+}
+.markdown-body blockquote {
+  @apply border-l-4 border-gray-300 pl-4 py-2 italic text-gray-700;
+}
+/* Styles for syntax highlighter output */
+.markdown-body pre {
+  @apply rounded-md overflow-x-auto my-4; /* Adjusted to let syntax highlighter handle background */
+}
+.markdown-body code {
+  @apply bg-gray-200 px-1 py-0.5 rounded-sm text-sm;
+}
+/* Ensure code blocks don't have redundant background/padding from react-markdown default */
+.markdown-body pre > code {
+  @apply p-0 m-0 bg-transparent;
+}
+
+.markdown-body table {
+  @apply w-full border-collapse my-4;
+}
+.markdown-body th, .markdown-body td {
+  @apply border border-gray-300 p-2 text-left;
+}
+.markdown-body th {
+  @apply bg-gray-100 font-semibold;
+}
+
+/* Toolbar button styles */
+.toolbar-btn {
+  @apply px-3 py-1.5 rounded-md text-sm bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+/* Modal animation */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 0.3s ease-out forwards;
+}
