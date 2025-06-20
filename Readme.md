@@ -52,3 +52,11 @@ npm run dev                # Opens at http://localhost:5173
 Username: admin
 Password: password
 ```
+
+### Quick Setup
+
+```bash
+chmod +x setup.sh kill.sh
+./setup.sh
+./kill.sh
+```
